@@ -14,11 +14,11 @@ The data is contained in two files `main_data.txt` and `train_data.txt`.
 
 To do this write 3 functions:
 
-- `**data_setup()**` which reads in both the dataset contained in `main_data.txt`, and the training dataset contained in `train_data.txt` into two lists - returning the two lists (`main_data`, and `train_data`) from the function. The lists containing each item of the dataset should use appropriate types for each element of the list.
-- `**dist_vect(item,train_data)**` which takes as arguments one element of the list `main_data`, and the list `train_data`, both from the output of the data_setup function. The function should calculate the Euclidean distance from item in the dataset to each item in the training dataset in order. The function should return a list of (distance, class) tuples.
-- `**decide_class(dv)**` which takes the number  𝑘  of nearest neighbours as an input argument. Your function should attribute a weight  𝑤𝑗  to each of the  𝑘  nearest neighbours, inversely proportional to their distance from the data item:
+- **`data_setup()`** which reads in both the dataset contained in `main_data.txt`, and the training dataset contained in `train_data.txt` into two lists - returning the two lists (`main_data`, and `train_data`) from the function. The lists containing each item of the dataset should use appropriate types for each element of the list.
+- **`dist_vect(item,train_data)`** which takes as arguments one element of the list `main_data`, and the list `train_data`, both from the output of the data_setup function. The function should calculate the Euclidean distance from item in the dataset to each item in the training dataset in order. The function should return a list of (distance, class) tuples.
+- **`decide_class(dv)`** which takes the number  𝑘  of nearest neighbours as an input argument. Your function should attribute a weight  𝑤𝑗  to each of the  𝑘  nearest neighbours, inversely proportional to their distance from the data item:
 
-![alt text](K-Nearest-neighbours/formula.png)
+![alt text](https://github.com/StratisSpakouris/K-Nearest-neighbours/formula.png)
  
   The score for each class is determined by the sum of the weights of each item in that class amongst the  𝑘  nearest neighbours. The     class with the highest score is chosen for the data item.
 - Lastly use your functions to obtain a list containing the calculated class for each of the element in the main_data list you have constructed.
