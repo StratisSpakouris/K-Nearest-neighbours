@@ -41,3 +41,5 @@ $$d(x,y) = \max\limits_{i=1..n}\left|x_i-y_i\right|$$
 These are the $L_1$ and $L_\infty$ norms respectively.
 
 - Lastly use the new functions to obtain a list containing the calculated class for each of the element in the main_data list you have constructed.
+___
+The text above was provided by the professor Stuart King (University of Edinburgh).
